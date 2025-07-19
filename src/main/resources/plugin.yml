@@ -1,0 +1,10 @@
+name: PlayerBackpacks
+version: 1.0.0
+main: com.yna.playerbackpacks.PlayerBackpacks
+api-version: 1.19
+depend: [PlayerPoints]
+
+commands:
+  backpack:
+    description: 打开背包
+    usage: /backpack
