@@ -1,28 +1,29 @@
 package com.yna.playerbackpacks.util;
 
-public class License {
-    private String ip;
-    private String deviceId;
+import java.util.List;
 
-    public License(String ip, String deviceId) {
+public class License {
+    private List<String> ip;          // 支持多个 IP 地址
+    private List<String> deviceId;    // 支持多个设备 ID
+
+    public License(List<String> ip, List<String> deviceId) {
         this.ip = ip;
         this.deviceId = deviceId;
     }
 
-    public String getIp() {
+    public List<String> getIp() {
         return ip;
     }
 
-    public void setIp(String ip) {
+    public void setIp(List<String> ip) {
         this.ip = ip;
     }
 
-    public String getDeviceId() {
+    public List<String> getDeviceId() {
         return deviceId;
     }
 
-    public void setDeviceId(String deviceId) {
+    public void setDeviceId(List<String> deviceId) {
         this.deviceId = deviceId;
     }
 }
-
